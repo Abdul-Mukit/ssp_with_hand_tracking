@@ -1,0 +1,7 @@
+train  = NDDS_2_SSP/train.txt
+valid  = NDDS_2_SSP/test.txt
+backup = backup/cautery
+mesh = Mesh/my_cautery.ply
+tr_range =
+name = cautery
+diam = 0.222
