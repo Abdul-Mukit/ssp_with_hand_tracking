@@ -126,7 +126,7 @@ def valid(datacfg, cfgfile, weightfile):
         if visualize:
             plt.xlim((0, test_width))
             plt.ylim((0, test_height))
-            plt.imshow(scipy.misc.imresize(img, (test_height, test_width)))
+            plt.imshow(np.array(Image.fromarray(img).resize((test_width, test_height))))
             plt.ion()
             # Projections
             for edge in edges_corners:
